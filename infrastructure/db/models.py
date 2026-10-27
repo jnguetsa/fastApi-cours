@@ -1,10 +1,10 @@
-# infrastructure/db/models.py
+ # infrastructure/db/models.py
 from datetime import datetime
 from decimal import Decimal
 from typing import Optional
 from sqlalchemy import ForeignKey, String, Numeric, Table, Column, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from .base import Base
+from base import Base
 
 # Table d'association many-to-many simple
 product_category = Table(
